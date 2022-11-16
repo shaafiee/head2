@@ -2,10 +2,16 @@ from PIL import Image, ImageDraw, ImageFilter
 import random
 import json
 import sys
+import os
 
-sys.path.append('/root/headz/headz/art/Headz')
+path = "nft"
+if not os.path.exists(path):
+	os.makedirs(path)
+path = "meta"
+if not os.path.exists(path):
+	os.makedirs(path)
 
-mypath = '/root/headz/headz/art/Headz/'
+mypath = './'
 
 background = {0:"None", 1:"Gold", 2:"Mars", 3:"Green", 4:"Azure", 5:"Magenta", 6:"Sky", 7:"Sandy", 8:"Lavender", 9:"Olive", 10:"Grey", 11:"Blue warp", 12:"Copper warp", 13:"Turquoise warp", 14:"Ion storm", 15:"Candy cloud"}
 
